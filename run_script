@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # ===========================================
+# ===========================================
 BASEDIR="$HOME/my_root_project_folder"
 PORT=$1
 
@@ -16,4 +17,18 @@ YELLOW='\033[0;33m'
 NC='\033[0m' # No Color
 # ===========================================
 # ===========================================
-echo -e "${GREEN}Запуск приложения $SCRIPT_FOLDER, выполняется тестирование:${NC}"
+echo -e "${GREEN}Launching the application $SCRIPT_FOLDER, testing is in progress:${NC}"
+
+# Activating the virtual environment:
+source "$BASEDIR/$SCRIPT_FOLDER/$VENV_FOLDER/bin/activate"
+
+# Going to the directory with the script:
+cd "$BASEDIR/$SCRIPT_FOLDER" 
+
+# Running a Python script (executive file):
+python "$RUN_PY.py" "$PORT" 
+
+# The script has finished working
+echo -e "${GREEN}The application has been stopped!${NC}"
+# ===========================================
+# ===========================================
