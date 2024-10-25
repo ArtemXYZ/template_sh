@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# ===========================================
+BASEDIR="$HOME/my_root_project_folder"
+PORT=$1
+
+# =========================================== The main variables:
+SCRIPT_FOLDER="price_tag"
+VENV_FOLDER=".venv_project"
+RUN_PY="run_script" # Python file where the script is initialized (if __name__ == '__main__':).
+PYTHON_PROCESS_PID=0
+# =========================================== Color codes:
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+NC='\033[0m' # No Color
+# ===========================================
+# ===========================================
+echo -e "${GREEN}Запуск приложения $SCRIPT_FOLDER, выполняется тестирование:${NC}"
