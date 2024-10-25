@@ -1,7 +1,7 @@
-<p align="center">
+<!--<p align="center"> </p>  -->
 # template_sh
 ### template sh-script for tmux
-</p>
+
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -27,3 +27,10 @@ This template is designed to run scripts in tmux windows.
 [stars-url]: https://github.com/ArtemXYZ/template_sh/stargazers
 [issues-shield]: https://img.shields.io/github/issues/ArtemXYZ/template_sh.svg?style=for-the-badge
 [issues-url]: https://github.com/ArtemXYZ/template_sh/issues
+
+<!--
+Данный шаблон предназначен для запуска скриптов в окнах tmux. 
+Добавлены цвета отделяющие служебные сообщения (выделены зеленым) относящиеся к инициализации самого скрипта.
+Остальной вывод в консоль (относящийся к начинке пайтон скрипта) останется цветом по умолчанию.
+Это помогает быстро визуально определять и отделять место запуска или остановки скрипта, если в консоль выводится достаточно много информации. 
+-->
